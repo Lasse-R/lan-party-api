@@ -8,6 +8,11 @@ on:
     branches:
       - master
   workflow_dispatch:
+  
+
+env:
+  JWT_SECRET: test
+  JWT_ISSUER: test
 
 jobs:
   build:
