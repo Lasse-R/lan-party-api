@@ -34,5 +34,7 @@ public class AuthController {
         this.authService.authorize(payload.get("accessToken"));
 
         return new ResponseEntity<>(new HashMap<>(Map.of("message", "Successful authorization")), HttpStatus.OK);
+
+
     }
 }
